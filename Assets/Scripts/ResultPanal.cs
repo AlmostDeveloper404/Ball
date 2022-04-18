@@ -21,7 +21,7 @@ public class ResultPanal : MonoBehaviour
         if (result.HasValue)
         {
             _message.text = result.Value.Message;
-            _time.text = result.Value.IsWon ? result.Value.Time.ToString() : "";
+            _time.text = result.Value.IsWon ?$"Seconds: {result.Value.Time}"  : "";
         }
         else
         {

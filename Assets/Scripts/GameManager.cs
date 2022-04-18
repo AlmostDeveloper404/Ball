@@ -16,7 +16,7 @@ public class GameManager : Singleton<GameManager>
         Result result = new Result
         {
             Time = BallMovement.Instance.Seconds,
-            Message = "You Win",
+            Message = "You won!",
             IsWon = true
         };
         OnGameOver?.Invoke();
@@ -28,7 +28,7 @@ public class GameManager : Singleton<GameManager>
         Result result = new Result
         {
             Time = BallMovement.Instance.Seconds,
-            Message = "You Lose",
+            Message = "You lost!",
             IsWon = false
         };
         OnGameOver?.Invoke();
